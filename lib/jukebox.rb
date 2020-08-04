@@ -10,6 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+#lists help commands
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -18,6 +19,7 @@ def help
   puts "- exit : exits this program"
 end
 
+#adds a number to each song on the list and prints them out
 def list(songs)
   songs.each.with_index(1) do |song, i|
     puts "#{i}. #{song}"
