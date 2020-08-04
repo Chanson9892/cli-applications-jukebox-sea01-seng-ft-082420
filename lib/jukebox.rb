@@ -29,8 +29,10 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
+  # user input
   user_song = gets.strip
   found_song = ""
+  #tests to see if the user inputed song is a song on the list
   songs.each do |song|
     if song.include? user_song
       found_song = user_song
