@@ -38,7 +38,7 @@ def play(songs)
     num = user_song.to_i - 1
     puts "Playing #{songs[num]}"
     run(songs)
-  elsif play_checker_result != ""
+  elsif found_song != ""
     puts "Playing #{found_song}"
     run(songs)
   else
