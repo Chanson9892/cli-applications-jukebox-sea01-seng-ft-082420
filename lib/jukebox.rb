@@ -34,7 +34,7 @@ def play(songs)
       found_song = user_song
     end
   end
-  if user_song.to_i.to_s == user_song && user_song.to_i <= songs.length - 1
+  if found_song.to_i.to_s == user_song && user_song.to_i <= songs.length - 1
     num = user_song.to_i - 1
     puts "Playing #{songs[num]}"
     run(songs)
